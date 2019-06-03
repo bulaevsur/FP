@@ -4,12 +4,14 @@ using System.IO;
 
 namespace MyProgram
 {
+    /// <summary>
+    /// Базовый класс, содержащий в себе набор основных переменных, набор свойств и виртуальную функцию
+    /// </summary>
     class animal
     {
         public string color;
         public  string type;
         public int weight;
-        public string s;
         public animal() { }
         public animal(string c, string t, int w)
         {
@@ -32,9 +34,13 @@ namespace MyProgram
             get { return weight; }
             set { weight = value; }
         }
+        /// <summary>
+        /// Виртуальная функция, формирующая строку с информацией о сущности
+        /// </summary>
+        /// <returns></returns>
         public virtual string info()
         {
-            return s = $"Цвет: {color} Тип: {type} Вес: {weight}";
+            return $"Цвет: {color} Тип: {type} Вес: {weight}";
         }
     }
 
@@ -66,9 +72,13 @@ namespace MyProgram
             get { return predator; }
             set { predator = value; }
         }
+        /// <summary>
+        /// Переопределённая виртуальная функция, добавляет при выводе параметр "Хищник"
+        /// </summary>
+        /// <returns></returns>
         public override string info()
         {
-            return s = $"Цвет: {color} Тип: {type} Вес: {weight} Хищник: {predator}";
+            return base.info() + $" Хищник: {predator}";
         }
     }
 
@@ -98,7 +108,7 @@ namespace MyProgram
         }
         public override string info()
         {
-            return s = $"Цвет: {color} Тип: {type} Вес: {weight} Хищник: {predator}";
+            return base.info();
         }
     }
 
@@ -128,25 +138,21 @@ namespace MyProgram
         }
         public override string info()
         {
-            return s = $"Цвет: {color} Тип: {type} Вес: {weight} Хищник: {predator}";
+            return base.info();
         }
     }
-
 
     class Program
     {
         static void Main(string[] args)
         {
-            List<animal> lst = new List<animal>();
-            mammal mam = new mammal("Неизвестен", "Семейство собачьих", 0, "Неизвестно");
-            wolf wof = new wolf("Серый", "Дикий", 35, "Да");
-            dog gav = new dog("Белый", "Лабрадор", 25, "Нет");
-            lst.Add(mam);
-            lst.Add(wof);
-            lst.Add(gav);
-            for (int i = 0; i < lst.Count; i++)
+            var mam = new mammal("Неизвестен", "Семейство собачьих", 0, "Неизвестно");
+            var wof = new wolf("Серый", "Дикий", 35, "Да");
+            var gav = new dog("Белый", "Лабрадор", 25, "Нет");
+            var lst = new List<animal>() { mam, wof, gav };
+            foreach(var s in lst)
             {
-                Console.WriteLine(lst[i].info());
+                Console.WriteLine(s.info());
             }
             Console.ReadLine();
         }

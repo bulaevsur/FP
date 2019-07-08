@@ -1,0 +1,12 @@
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csprojResolveAssemblyReference.cache
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\DBmain.mdf
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\DBmain_log.ldf
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.dll
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.xml
+C:\Users\Unknown\documents\visual studio 2017\Projects\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.SqlServer.xml
